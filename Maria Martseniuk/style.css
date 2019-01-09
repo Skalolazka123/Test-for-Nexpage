@@ -24,8 +24,6 @@
     src: url(fonts/Cabin-Regular.ttf);
 }
 
-@media screen and (min-width: 1245px) {}
-
 .container {
     max-width: 1640px;
     position: relative;
@@ -577,8 +575,7 @@ select:-webkit-autofill:focus {
 }
 
 .close {
-    left: calc(100% - 15px);
-    position: relative;
+    margin-left: calc(100% - 15px);
     margin-bottom: 50px;
 }
 
@@ -762,7 +759,7 @@ select:-webkit-autofill:focus {
     }
     .slide-inner__arr-next {
         bottom: 3vw;
-        width: 15vw;
+        width: 12vw;
     }
     .slick-dots li {
         width: 6vw;
@@ -783,10 +780,10 @@ select:-webkit-autofill:focus {
     }
     .slick-dots li.slick-active::after {
         width: 24vw;
+        margin-left: 4.5vw;
     }
     slick-dots li::after {
         height: 1px;
-        margin-left: 4.5vw;
     }
     
     /****************
@@ -830,43 +827,33 @@ select:-webkit-autofill:focus {
     /****************
     ****FOOTER***
     ****************/
+    footer > .container {
+        height: 97vw;
+        min-height: 510px;
+    }
     .contact-us__text {
         font-size: 5vw;
         padding: 0 8vw;
     }
+    
     .dark-button {
-        width: 22vw;
-        min-height: 61px;
-        min-width: 240px;
+        width: 20vw;
         height: 6vw;
         border-width: 0.4vw;
-        font-size: calc(16px + 0.2vw);
+        font-size: 1.7vw;
     }
     .contact-us__button {
         margin: 6vw 0 0;
     }
     .popup-overlay {
         width: 55vw;
-        margin: auto;
-    }
-    .contact-form {
-        justify-content: space-around;
-    }
-    .contact-form__inputs {
-        min-width: 280px;
-        text-align: center;
-    }
-    .contact-form__wrap-button {
-        width: 240px;
-        text-align: center;
     }
     .contact-form input,
     .contact-form textarea {
-        border-width: 0.08vw;
-        width: 25vw;
         min-height: 41px;
         min-width: 240px;
-        height: 4.2vw;
+        width: 20vw;
+        height: 6vw;
         margin-bottom: 2.5vw;
         padding: 0.8vw;
         box-sizing: border-box;
@@ -874,13 +861,83 @@ select:-webkit-autofill:focus {
     .contact-form textarea {
         height: 10vw;
         min-height: 141px;
-        
     }
-    .follow {
-        justify-content: space-around;
+    .follow > * {
+        flex-basis: 22vw;
+    }
+    .follow__copyright,
+    .follow__email > a{
+        font-size: 1.5vw;
+    }
+    .follow__social-links a svg {
+        height: 2vw;
+        width: 2vw;
+    }
+    .bottom {
+        height: 8.6vw;
+    }
+    .bottom__text {
+        font-size: 1.3vw;
+    }
+    .bottom__img {
+        width: 1.3vw;
+        height: 1.3vw;
+        margin-left: 1.1vw;
     }
 }
 
+/***************************
+****FORM FOR SMALL TABLET***
+****************************/
+@media screen and (max-width: 975px) and (min-width: 320px){
+    .popup-overlay {
+        width: 28vw;
+        min-width: 240px;
+        margin: auto;
+    }
+    .popup-content.active {
+        margin: auto;
+    }
+    .close {
+        margin-bottom: 4vw;
+    }
+    .contact-form__inputs {
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form__wrap-button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contact-form__button.dark-button {
+        min-height: 31px;
+        min-width: 240px;
+        width: 100%;
+        font-size: calc(16px + 0.2vw);
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        border-width: 0.08vw;
+        width: 100%;
+    }
+    ::-webkit-input-placeholder {
+        font-size: 1.7vw;
+    }
+
+    ::-moz-placeholder {
+        font-size: 1.7vw;
+    }
+
+    :-moz-placeholder {
+        font-size: 1.7vw;
+    }
+
+    :-ms-input-placeholder {
+        font-size: 1.7vw;
+    }
+}
 
 /****************
 ****MOBILE***
