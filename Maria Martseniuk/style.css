@@ -797,14 +797,15 @@ select:-webkit-autofill:focus {
         margin: 0;
     }
     .next-process {
-        height: 40vw;
+        height: 42vw;
     }
     .next-process__layout {
-        padding: 18vw 8vw 0 30vw;
+        padding: 18vw 8vw 0 32vw;
+        margin: 0 30px;
     }
     .next-process__content-block {
         max-width: 91vw;
-        height: 16vw;
+        height: 18vw;
         padding: 3.5vw 6vw 0;
     }
     .next-process__sub-title {
@@ -831,6 +832,7 @@ select:-webkit-autofill:focus {
     ****************/
     .contact-us__text {
         font-size: 5vw;
+        padding: 0 8vw;
     }
     .dark-button {
         width: 22vw;
